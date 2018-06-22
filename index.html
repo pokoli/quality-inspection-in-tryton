@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Quality Inspection in Tryton</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+                    <h1>Quality Inspection in Tryton</h1>
+                    <p>Available on: <a target="_blank"
+                        href="http://pokoli.github.io/quality-inspection-in-tryton/">
+                        http://pokoli.github.io/quality-inspection-in-tryton/</a></p>
+                </section>
+				<section>
+                    <h2> Who am I?</h2>
+                    <h3 class="fragment enfassis">
+                        Sergi Almacellas Abellana</h3>
+                    <ul>
+                        <li class="fragment">(Python &hearts;) Programmer</li>
+                        <li class="fragment">Open source enthusiast</li>
+                        <li class="fragment">Tryton commiter since Nov 2013
+                        </li>
+                    </ul>
+                </section>
+				<section>
+                    <h2>What means quality inspection</h2>
+                    <ul>
+                        <li class="fragment enfassis">Check a product meets some criterias</li>
+                        <li class="fragment enfassis">Applies to bought, produced and sold products</li>
+                        <li class="fragment enfassis">Related to a product or a lot of products</li>
+                        <li class="fragment enfassis">ISO Standards</li>
+                    </ul>
+                </section>
+				<section>
+                    <h2>Requirements</h2>
+                    <ul>
+                        <li class="fragment enfassis">Simplicity</li>
+                        <li class="fragment enfassis">Flexibility</li>
+                        <li class="fragment enfassis">Powerfull system without programing</li>
+                        <li class="fragment enfassis">Flexibility</li>
+                        <li class="fragment enfassis">Did I mention flexibility?</li>
+                    </ul>
+                </section>
+				<section>
+                    <h2>Use cases</h2>
+                    <ul>
+                        <li class="fragment enfassis">Mainly related to fruits and vegetables</li>
+                        <li class="fragment enfassis">Diferent results should be computed from quality inputs</li>
+                        <li class="fragment enfassis">Quality results used to compute invoice price</li>
+                    </ul>
+                </section>
+				<section>
+                    <h2>Aproach</h2>
+                    <ul>
+                        <li class="fragment enfassis">Quality tests defined for each product</li>
+                        <li class="fragment enfassis">Inputs is dictonary field</li>
+                        <li class="fragment enfassis">Result is a dictionary computed field</li>
+                        <li class="fragment enfassis">A formula is used to define the results</li>
+                        <li class="fragment enfassis">Origin values can be used for the formula</li>
+                    </ul>
+                </section>
+				<section>
+                    <h2>Results</h2>
+                    <ul>
+                        <li class="fragment enfassis">Quality administration have full control</li>
+                        <li class="fragment enfassis">User only needs to focus on inputs</li>
+                    </ul>
+                </section>
+				<section>
+                    <h2>Demo</h2>
+                </section>
+				<section>
+                    <h1>Thank you!</h1>
+                    <p>The presentation code is avaiable on:</p>
+                    <p><a target="_blank"
+                        href="http://github.com/pokoli/quality-inspection-in-tryton/">
+                        http://github.com/pokoli/quality-inspection-in-tryton/
+                    </a></p>
+                    <h1 class="fragment">Questions?</h1>
+                </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
